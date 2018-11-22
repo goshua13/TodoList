@@ -13,7 +13,7 @@ class TaskIndex extends Component {
                     Add Tasks
                 </Link>
                 
-                <div className='niggers'>
+                <div className='bruhs'>
                     {
                         this.props.tasks.map(task => {
                             return <div key={Math.random()}>{task}</div>
