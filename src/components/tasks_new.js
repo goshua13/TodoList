@@ -11,7 +11,7 @@ class TasksNew extends Component {
     renderField(field){
         return(
         <div className='form-group'>
-            <label>Enter Tasks you dumb niggeR</label>
+            <label>Enter Tasks</label>
             <input 
             className='form-control'
             type='text'
@@ -21,9 +21,9 @@ class TasksNew extends Component {
         )
     }
 
-    balls(value) {
+    submitDis(value) {
         console.log(value)
-        this.props.addTask(value.disInputBi);
+        this.props.addTask(value.disInput);
     }
 
     render(){
@@ -33,9 +33,9 @@ class TasksNew extends Component {
                 <Link className='btn btn-danger' to='/'>
                     Back to Tasks
                 </Link>
-                <form onSubmit = {handleSubmit(this.balls.bind(this))}>               
+                <form onSubmit = {handleSubmit(this.submitDis.bind(this))}>               
                     <Field 
-                        name = 'disInputBi'
+                        name = 'disInput'
                         component = {this.renderField}
                         />
                 </form>
